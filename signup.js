@@ -14,6 +14,7 @@ form.addEventListener('submit', e => {
 	
 	if(usernameValue === '') {
 		setErrorFor(username, 'Username cannot be blank');
+	
 		return false;
 	} else {
 		setSuccessFor(username);
@@ -60,9 +61,10 @@ form.addEventListener('submit', e => {
 		setSuccessFor(password2);
 	}
 
-
-	localStorage.setItem("e",email);
-	localStorage.setItem("p",password);
+	var sendJSON = JSON.stringify(email);
+	var sendJSON2 = JSON.stringify(password);
+	localStorage.setItem('email',sendJSON);
+	localStorage.setItem("password",sendJSON2);
 
 	document.location.href = 'file:///C:/Users/ANANT%20VERMA/Documents/GitHub/Signup-and-login-page-redirect-to-responsive-CV-.github.io/login.html';
 
