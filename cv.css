@@ -195,3 +195,13 @@ body{
     position: relative;
     padding-bottom: 2rem;
 }
+@media screen and (max-width:700px){
+   .main-content{
+    grid-template-columns: 1fr;
+   }
+}
+@media screen and (max-width:390px){
+    .name{
+        font-size: 1.5rem;
+    }
+}
