@@ -195,17 +195,3 @@ body{
     position: relative;
     padding-bottom: 2rem;
 }
-
-
-
-
-@media screen and (max-width:700px){
-    .profile img{
-        width: 60%;
-    }
-}
-@media screen and (max-width:390px){
-    .name{
-        font-size: 1.5rem;
-    }
-}
