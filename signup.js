@@ -66,10 +66,7 @@ form.addEventListener('submit', e => {
 	localStorage.setItem('email',sendJSON);
 	localStorage.setItem("password",sendJSON2);
 
-	document.location.href = 'file:///C:/Users/ANANT%20VERMA/Documents/GitHub/Signup-and-login-page-redirect-to-responsive-CV-.github.io/login.html';
-
-	
-	
+	document.location.href = "file:///C:/Users/ANANT%20VERMA/Desktop/PROJECT/Project1/signupConPage.html";
 	return false;
 
 });
@@ -87,4 +84,3 @@ function setSuccessFor(input) {
 	const formControl = input.parentElement;
 	formControl.className = 'form-control success';
 }
-	
