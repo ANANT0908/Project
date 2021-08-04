@@ -96,7 +96,6 @@ body{
 }
 .skills-section ul li{
     display: grid;
-    /* grid-template-columns: repeat(2, 1fr); */
     padding: .4rem 0;
 }
 
@@ -195,6 +194,10 @@ body{
     position: relative;
     padding-bottom: 2rem;
 }
+
+
+
+
 @media screen and (max-width:700px){
    .main-content{
     grid-template-columns: 1fr;

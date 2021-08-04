@@ -4,6 +4,8 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 var button  = document.getElementById("button");
+
+
 form.addEventListener('submit', e => {
 	e.preventDefault();
 
@@ -61,12 +63,11 @@ form.addEventListener('submit', e => {
 		setSuccessFor(password2);
 	}
 
-	var sendJSON = JSON.stringify(email);
-	var sendJSON2 = JSON.stringify(password);
-	localStorage.setItem('email',sendJSON);
-	localStorage.setItem("password",sendJSON2);
+		localStorage.setItem("e",email);
+	localStorage.setItem("p",password);
 
-	document.location.href = "file:///C:/Users/ANANT%20VERMA/Desktop/PROJECT/Project1/signupConPage.html";
+	document.location.href = 'file:///C:/Users/ANANT%20VERMA/Desktop/PROJECT/Project1/signupConPage.html';
+
 	return false;
 
 });
